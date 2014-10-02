@@ -5,13 +5,14 @@ The program should calculate and display the miles per gallon obtained for each 
 all input information, the program should calculate and print the combined miles per gallon
 obtained for all tankfuls. Here is a sample input/output dialog:
 
-Enter # of hours worked (-1 to end): 39
-Enter hourly rate of the worker ($00.00): 10.00
-Salary is $390.00
-Enter # of hours worked (-1 to end): 40
-Enter hourly rate of the worker ($00.00): 10.00
-Salary is $400.00
-Enter # of hours worked (-1 to end): 41
-Enter hourly rate of the worker ($00.00): 10.00
-Salary is $415.00
-Enter # of hours worked (-1 to end): -1
+Enter the gallons used (-1 to end): 12.8
+Enter the miles driven: 287
+The miles / gallon for this tank was 22.421875
+Enter the gallons used (-1 to end): 10.3
+Enter the miles driven: 200
+The miles / gallon for this tank was 19.417475
+Enter the gallons used (-1 to end): 5
+Enter the miles driven: 120
+The miles / gallon for this tank was 24.000000
+Enter the gallons used (-1 to end): -1
+The overall average miles/gallon was 21.601423
