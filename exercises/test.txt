@@ -1,0 +1,12 @@
+1.Sia dato un file residente su supporto magnetico esterno, consistente in un numero imprecisato di records, ciasuno dei quali costituito da 1 carattere e da un vettore di 10 interi.
+Si vuole leggere il file fino al suo esaurimento e scrivere sullo schermo i contenuti dei vari recrods secondo il formato
+
+N=<numero rercord><spazio><carattere><spazio><i 10 interi del vettore separati da uno spazio>
+
+2.Scrivere un programma C che simuli una semplice calcolatrice, capace di effettuare solo la somma tra due numeri interi positivi, ciascuno della lunghezza di due caratteri decimali, nell'ipotesi che anche il risultato sia costituito da due sole cifre(es 11+44=55).
+Il programma dovrà leggere da tastiera la sequenza di due cifre alfa-numeriche che costituiranno i due operandi della somma(quindi con codice %c).
+Dopo aver convertito le due coppie di cifre, ciascuna in un intero binario, eseguire l'operazione rischiesta in binario ed infine scrivere sullo schermo il risultato dell'operazione effettuato nel formato di due cifre(cioè %c).
+Per le conversioni utilizzare le funzioni
+Int ATOI(<carattere>)
+Char ITOA(<intero>)
+Tenendo presente che: ATOI('0')=48...ATOI('9')=57 e ITOA("48")=0...ITOA("57")=9
