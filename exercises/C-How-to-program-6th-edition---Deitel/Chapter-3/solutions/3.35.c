@@ -7,6 +7,14 @@ int main()
     printf("Enter an five-digit integer: ");
     scanf("%d", &i);
 
+    while(!(i>=10000 && i<100000))
+    {
+        printf("Integer must be five-digits!\n\n");
+
+        printf("Enter an five-digit integer: ");
+        scanf("%d", &i);
+    }
+
     n1=i/10000;
     n2=(i/1000)%10;
     n3=(i/100)%10;
@@ -14,9 +22,13 @@ int main()
     n5=i%10;
 
     if(n1 == n5 && n2 == n4)
+    {
         printf("\n%d is palyndrome\n", i);
+    }
     else
+    {
         printf("\n%d is not palyndrome\n", i);
+    }
 
     return 0;
 }
