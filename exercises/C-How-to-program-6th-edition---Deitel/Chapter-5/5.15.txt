@@ -1,0 +1,5 @@
+(Hypotenuse Calculations) Define a function called hypotenuse that calculates the length
+of the hypotenuse of a right triangle when the other two sides are given. Use this function in a program
+to determine the length of the hypotenuse for each of the following triangles. The function
+should take two arguments of type double and return the hypotenuse as a double. Test your program
+with the side values specified in Fig. 5.18.
