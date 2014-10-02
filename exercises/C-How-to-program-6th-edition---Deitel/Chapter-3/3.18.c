@@ -2,21 +2,32 @@
 
 int main()
 {
-    float sales, rate, salary;
-    int regularSalary;
+    int accNum;
+    float balanceOld, chargesTot, creditTot, creditLim, balanceNew;
 
-    regularSalary=200;
-    rate=9.0/100;
+    printf("Enter account number (-1 to end): ");
+    scanf("%d", &accNum);
 
-    printf("Enter sales in dollars (-1 to end): ");
-    scanf("%f", &sales);
+    while(accNum!=-1){
+        printf("Enter beginning balance: ");
+        scanf("%f", &balanceOld);
+        printf("Enter total charges: ");
+        scanf("%f", &chargesTot);
+        printf("Enter total credit: ");
+        scanf("%f", &creditTot);
+        printf("Enter credit limit: ");
+        scanf("%f", &creditLim);
 
-    while(sales!=-1){
-        salary=regularSalary+sales*rate;
-        printf("Salary is: $%.2f\n\n", salary);
+        balanceNew=balanceOld+chargesTot-creditTot;
+        if(balanceNew>creditLim){
+                printf("Account: %8d\n", accNum);
+                printf("Credit limit: %.2f\n", creditLim);
+                printf("Balance: %12.2f\n", balanceNew);
+                printf("Credit Limit Exceeded.\n");
+        }
 
-        printf("Enter sales in dollars (-1 to end): ");
-        scanf("%f", &sales);
+        printf("\nEnter account number (-1 to end): ");
+        scanf("%d", &accNum);
     }
 
     return 0;
