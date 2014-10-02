@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 100
-#define readFile "numeri.dat"
-#define writeFile "numeriCrescenti.dat"
+#define readFile "numbers.dat"
+#define writeFile "ascendingNumbers.dat"
 
 void bubbleSort(int *, const int, int (*)(int, int));
 int ascending(const int, const int);
