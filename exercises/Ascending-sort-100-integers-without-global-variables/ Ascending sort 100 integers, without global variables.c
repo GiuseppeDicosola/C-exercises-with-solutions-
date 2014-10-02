@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 100
-#define readFile "numeri.dat"
-#define writeFile "numeriCrescenti.dat"
+#define readFile "numbers.dat"
+#define writeFile "ascendingNumbers.dat"
 
 int main()
 {
@@ -27,7 +27,7 @@ int main()
 			puts("Values greater than 100");
 			exit(1);
 		}
-		// ordinamento crescente numeri
+		// ascending sort numbers
 		for(pass=1; pass<=SIZE-1; pass++)
 			for(count=0; count<=SIZE-2; count++)
 				if((numbers[count]>numbers[count+1])){
