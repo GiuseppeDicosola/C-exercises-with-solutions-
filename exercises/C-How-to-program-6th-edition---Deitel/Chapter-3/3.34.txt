@@ -1,0 +1,7 @@
+(Hollow Square of Asterisks) Modify the program you wrote in Exercise 3.33 so that it
+prints a hollow square. For example, if your program reads a size of 5, it should print
+*****
+*   *
+*   *
+*   *
+*****
